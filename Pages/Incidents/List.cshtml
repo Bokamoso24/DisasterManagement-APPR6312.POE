@@ -1,0 +1,21 @@
+﻿@page
+@model DisasterManagementApp.Pages.Incidents.ListModel
+@{
+    ViewData["Title"] = "Incidents";
+}
+
+<h2>Incidents</h2>
+<table class="table">
+    <thead><tr><th>Title</th><th>Type</th><th>Location</th><th>Date</th></tr></thead>
+    <tbody>
+        @foreach (var i in Model.Incidents)
+        {
+            <tr>
+                <td>@i.Title</td>
+                <td>@i.IncidentType</td>
+                <td>@i.Location</td>
+                <td>@i.ReportDate.ToLocalTime()</td>
+            </tr>
+        }
+    </tbody>
+</table>

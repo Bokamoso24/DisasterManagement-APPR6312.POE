@@ -1,0 +1,39 @@
+﻿@page
+@model DisasterManagementApp.Pages.Donations.CreateModel
+@{
+    ViewData["Title"] = "Donate Resources";
+}
+
+<h2>Donate</h2>
+
+<form method="post">
+    <div class="form-group mb-3">
+        <label>Donation Type</label>
+        <select asp-for="Donation.DonationType" class="form-control">
+            <option value="Monetary">Monetary</option>
+            <option value="Resource">Resource</option>
+        </select>
+    </div>
+
+    <div class="form-group mb-3">
+        <label>Amount (if monetary)</label>
+        <input asp-for="Donation.Amount" type="number" step="0.01" class="form-control" />
+    </div>
+
+    <hr />
+    <h4>Optional: Donate a Resource</h4>
+    <div class="form-group mb-3">
+        <label>Item Name</label>
+        <input asp-for="Resource.ItemName" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Item Type</label>
+        <input asp-for="Resource.ItemType" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Quantity</label>
+        <input asp-for="Resource.Quantity" type="number" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Donation</button>
+</form>

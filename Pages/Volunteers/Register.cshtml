@@ -1,0 +1,33 @@
+﻿@page
+@model DisasterManagementApp.Pages.Volunteers.RegisterModel
+@{
+    ViewData["Title"] = "Volunteer Registration";
+}
+
+<h2>Volunteer Registration</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Volunteer.PhoneNumber" class="form-label">Phone Number</label>
+        <input asp-for="Volunteer.PhoneNumber" class="form-control" />
+        <span asp-validation-for="Volunteer.PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Volunteer.Skills" class="form-label">Skills</label>
+        <input asp-for="Volunteer.Skills" class="form-control" />
+        <span asp-validation-for="Volunteer.Skills" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Volunteer.Availability" class="form-label">Availability</label>
+        <input asp-for="Volunteer.Availability" class="form-control" />
+        <span asp-validation-for="Volunteer.Availability" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

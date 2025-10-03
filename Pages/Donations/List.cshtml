@@ -1,0 +1,43 @@
+﻿@page
+@model DisasterManagementApp.Pages.Donations.ListModel
+@{
+    ViewData["Title"] = "Donations List";
+}
+
+<h2>Donations</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>DonationID</th>
+            <th>DonorID</th>
+            <th>Donation Type</th>
+            <th>Amount</th>
+            <th>Donation Date</th>
+            <th>Resources</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var donation in Model.Donations)
+        {
+            <tr>
+                <td>@donation.DonationID</td>
+                <td>@donation.DonorID</td>
+                <td>@donation.DonationType</td>
+                <td>@donation.Amount</td>
+                <td>@donation.DonationDate.ToString("yyyy-MM-dd")</td>
+                <td>
+                    @if (donation.Resources != null && donation.Resources.Any())
+                    {
+                        <ul>
+                            @foreach (var r in donation.Resources)
+                            {
+                                <li>@r.ItemName (@r.ItemType) x @r.Quantity</li>
+                            }
+                        </ul>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

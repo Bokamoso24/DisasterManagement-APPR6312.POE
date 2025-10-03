@@ -1,0 +1,29 @@
+﻿@page
+@model DisasterManagementApp.Pages.Volunteers.ListModel
+@{
+    ViewData["Title"] = "Volunteers List";
+}
+
+<h2>Registered Volunteers</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>VolunteerID</th>
+            <th>Phone Number</th>
+            <th>Skills</th>
+            <th>Availability</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var v in Model.Volunteers)
+        {
+            <tr>
+                <td>@v.VolunteerID</td>
+                <td>@v.PhoneNumber</td>
+                <td>@v.Skills</td>
+                <td>@v.Availability</td>
+            </tr>
+        }
+    </tbody>
+</table>

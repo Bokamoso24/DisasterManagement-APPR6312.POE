@@ -1,0 +1,27 @@
+﻿@page
+@model DisasterManagementApp.Pages.Incidents.CreateModel
+@{
+    ViewData["Title"] = "Report Incident";
+}
+
+<h2>Report Incident</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label>Title</label>
+        <input asp-for="Incident.Title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Type</label>
+        <input asp-for="Incident.IncidentType" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Location</label>
+        <input asp-for="Incident.Location" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <textarea asp-for="Incident.Description" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Report</button>
+</form>
