@@ -19,6 +19,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{ED124D
 		VolunteerAssignment.cs = VolunteerAssignment.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisasterManagement.Tests", "..\DisasterManagement.Tests\DisasterManagement.Tests.csproj", "{6955B60C-E988-43D3-A406-4576376DE148}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		DonationService.cs = DonationService.cs
+		VolunteerService.cs = VolunteerService.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisasterManagement.IntegrationTests", "..\DisasterManagement.IntegrationTests\DisasterManagement.IntegrationTests.csproj", "{BBCC87F1-CA76-4C07-A1ED-7D45C0E0E288}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +39,14 @@ Global
 		{57829C03-7326-4E28-A3D7-0D7D711C4A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57829C03-7326-4E28-A3D7-0D7D711C4A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57829C03-7326-4E28-A3D7-0D7D711C4A94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6955B60C-E988-43D3-A406-4576376DE148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6955B60C-E988-43D3-A406-4576376DE148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6955B60C-E988-43D3-A406-4576376DE148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6955B60C-E988-43D3-A406-4576376DE148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBCC87F1-CA76-4C07-A1ED-7D45C0E0E288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCC87F1-CA76-4C07-A1ED-7D45C0E0E288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCC87F1-CA76-4C07-A1ED-7D45C0E0E288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCC87F1-CA76-4C07-A1ED-7D45C0E0E288}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
