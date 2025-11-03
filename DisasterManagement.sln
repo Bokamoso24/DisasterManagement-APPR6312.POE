@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisasterManagement.IntegrationTests", "..\DisasterManagement.IntegrationTests\DisasterManagement.IntegrationTests.csproj", "{BBCC87F1-CA76-4C07-A1ED-7D45C0E0E288}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisasterManagementUI.Tests", "..\DisasterManagementUI.Tests\DisasterManagementUI.Tests.csproj", "{205B0497-10DD-4D0B-84E7-3ECD87A37F28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{BBCC87F1-CA76-4C07-A1ED-7D45C0E0E288}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBCC87F1-CA76-4C07-A1ED-7D45C0E0E288}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBCC87F1-CA76-4C07-A1ED-7D45C0E0E288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{205B0497-10DD-4D0B-84E7-3ECD87A37F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205B0497-10DD-4D0B-84E7-3ECD87A37F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205B0497-10DD-4D0B-84E7-3ECD87A37F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205B0497-10DD-4D0B-84E7-3ECD87A37F28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
